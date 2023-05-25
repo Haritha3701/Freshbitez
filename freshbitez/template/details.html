@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details page</title>
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="maindiv">
+       
+        <div class="productimage">
+            <img src="/media/{{data1.img}}">
+        </div>
+
+
+        <div class="productdetails">
+            <h1>{{data1.productname}}</h1>
+            <h2>₹ {{price}}</h2>
+            <h4>{{data1.discount}}%</h4>
+            <h3>₹ {{data1.orgprice}}</h3>
+            <div class="buybtn">
+                <button>Buy Now</button>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+    <h2 class="cmt">Reviews</h2>
+    <div class="comment">
+
+        {% if data1.cmt.all %}
+        {% for i in data1.cmt.all %}
+        <p style="color:palevioletred">{{i.name}}</b><small> {{i.date}}</small><br><b>{{i.msg}}</b></p>
+        {% endfor %}
+        {% else %}
+        <h2>No reviews</h2>
+        {% endif %}
+    </div>
+
+
+    {% if user.is_authenticated %}
+    <div class="commentbox">
+        <form action="{% url 'commentbox' %}" method="post">
+            {% csrf_token %}
+            <h2>Reviews</h2>
+            <textarea type="hidden" placeholder="Enter your reviews here" name="comment"></textarea>
+            <input type="hidden" name="user" value="{{user.username}}">
+            <input type="hidden" name="proid" value="{{data1.id}}"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    {% endif %}
+</body>
+
+</html>

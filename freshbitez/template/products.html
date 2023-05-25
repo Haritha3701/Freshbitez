@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page</title>
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="maindiv">
+
+        <div class="title">PRODUCTS</div>
+
+        <div class="products">
+            {% for i in data %}
+            <div>
+                <img src="/media/{{i.img}}">
+                <h3>{{i.productname}}</h3>
+                <h3>₹{{i.orgprice}}</h3>
+                <a href="{% url 'detailspage' %}?id={{i.id}}"><button>Order Now</button></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

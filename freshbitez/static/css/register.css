@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-image: url("/static/images/bgimg.jpg");
+}
+.register{
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 80px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.register h2{
+    color: rgb(246, 27, 100);
+    font-size: 40px;
+    font-family: 'Papyrus',fantasy;
+}
+.register input{
+    color: rgb(113, 2, 113);
+    width: 270px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-right: 10px;
+    padding-left: 25px;
+    border-radius: 10px;
+    border: 3px solid rgb(113, 2, 113);
+    font-family: 'Lucida console',monospace;
+}
+.register input:focus{
+    border: 3px solid pink;
+    outline: none;
+}
+.register input:hover{
+    border: 3px solid pink;
+}
+.register button{
+    height: 45px;
+    width: 200px;
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(246, 27, 100);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+.register button:hover{
+    background-color: pink;
+    color: rgb(246, 27, 100);
+}
+    

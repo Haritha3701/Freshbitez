@@ -1,0 +1,134 @@
+.body{
+    width: 1920px;
+
+}
+.maindiv{
+    display: flex;
+}
+
+.productimage{
+    margin-top: 100px;
+    margin-left: 150px;
+    
+}
+.productimage img{
+    width: 500px;
+    height: 400px;
+}
+.productimage img:hover{
+    transform: scale(1.2);
+    transition-duration: 1.5s;
+}
+.productdetails{
+    margin-top: 170px;
+    margin-left: 100px;
+    font-family: 'Exo 2', sans-serif;  
+    font-weight: bold;
+}
+.productdetails h1{
+    font-size: 30px;
+    color: rgb(246, 27, 100);
+    
+}
+.productdetails h2{
+    font-size: 25px;
+    color: rgb(103, 5, 103);
+}
+.productdetails h4{
+    display: inline;
+    padding-inline-end: 20px;
+    color: pink;
+    font-size: 18px;
+}
+.productdetails h3{
+    text-decoration: line-through;
+    color: pink;
+    display: inline;
+    font-size: 18px;
+}
+
+
+
+.buybtn{
+    display: flex;
+   
+}
+.buybtn button{
+    margin-top: 50px;
+    margin-right: 20px;
+    height: 45px;
+    width: 200px;
+    background-color: rgb(246, 27, 100);
+    color: white;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Lucida console',monospace;
+}
+.buybtn button:hover{
+    background-color: pink;
+    color: rgb(246, 27, 100);
+}
+
+.commentbox{
+    margin-top: 100px;
+    margin-left: 200px;
+
+}
+.commentbox h2{
+    color: rgb(103, 5, 103);
+}
+.commentbox textarea{
+    color: rgb(103, 5, 103);
+    width: 500px;
+    height: 100px;
+    border: pink solid 2px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    
+}
+.commentbox button{
+    background-color: rgb(246, 27, 100);
+    color: white;
+    height: 45px;
+    width: 200px;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+.commentbox button:hover{
+    color: rgb(103, 5, 103);
+    background-color: rgb(247, 161, 175);
+}
+.cmt{
+    margin-left: 150px;
+    margin-top: 50px;
+    color: rgb(103, 5, 103);
+}
+.comment{
+    background-color: rgb(251, 188, 198);
+    width: 800px;
+    height: 400px;
+    padding: 6px;
+    border-radius: 30px; 
+    overflow: auto;
+    color: rgb(103, 5, 103);
+    margin-left: 130px;
+    
+  }
+
+  .comment p{
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(246, 27, 100);
+    color: white;
+  }
+  .comment h2{
+    font-size: 16px;
+    padding-left: 10px;
+  }

@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background-image: url("/static/images/bgimg.jpg");
+}
+.login{
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 180px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.login h2{
+    color: rgb(246, 27, 100);
+    font-size: 50px;
+    font-family: 'Papyrus',fantasy;
+}
+.login input{
+    color: rgb(113, 2, 113);
+    width: 300px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 25px;
+    border-radius: 10px;
+    border: 3px solid rgb(113, 2, 113);
+    font-family: 'Lucida console',monospace;
+}
+.login input:focus{
+    border: 3px solid pink;
+    outline: none;
+}
+.login input:hover{
+    border: 3px solid pink;
+}
+.login button{
+    height: 40px;
+    width: 180px;
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(246, 27, 100);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+.login button:hover{
+    background-color: pink;
+    color: rgb(246, 27, 100);
+    border: 1px solid rgb(246, 27, 100);
+}
+font{
+    margin-top: 100px;
+    font-size: 15px;
+    font-family: 'Lucida console',monospace;
+    color: rgb(246, 27, 100) ;
+}
+.login a{
+    text-decoration: none;
+    color: rgb(64, 5, 64);
+    font-size: 14px;
+    font-family: 'Lucida console',monospace;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.login a:hover{
+    text-decoration: underline;
+}
